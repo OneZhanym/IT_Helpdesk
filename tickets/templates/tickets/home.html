@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <p>{{ description }}</p>
+    <button type="button">Create a Request</button>
+    <section>
+        <h2>My Tickets</h2>
+    </section>
+    <section>
+        <h2>Recent Activity</h2>
+    </section>
+
+    <div>
+        {% if tickets_count > 0 %}
+            <p>You have {{ tickets_count }} tickets.</p>
+        {% else %}
+            <p>You have no tickets.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
